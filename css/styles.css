@@ -130,6 +130,7 @@ body {
     color: var(--second-text-color);
     display: block;
     position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacst-link {
@@ -138,6 +139,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacst-item:not(:last-child) {
@@ -216,21 +218,21 @@ body {
     cursor: pointer;
     background-color: var(--accent-color);
     font-family: "Roboto";
-    border: 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover,
 .btn:focus,
 .btn:active {
     background-color: var(--accent-color);
-    color: var(--primary-titele-color);
+    color: var(--second-text-color);
+    border-radius: 4px;
 }
 
 .header-btn {
     color: var(--primary-titele-color);
     font-weight: 700;
     padding: 16px 32px;
-    border-radius: 4px;
 }
 
 
@@ -382,6 +384,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -445,10 +448,12 @@ body {
     border: 1px solid #afb1b8;
     background: #ffffff;
     border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company-icon {
     fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company-link:focus,
@@ -482,6 +487,7 @@ body {
     font-size: 14px;
     line-height: 1.71;
     color: var(--footer-contacst-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-logo {
@@ -566,6 +572,7 @@ body {
     border: 0;
     border-radius: 4px;
     display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-portfolio-item:not(:last-child) {
@@ -613,6 +620,7 @@ body {
 
 .portfolio-gallery-link {
     display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-gallery-link:hover,
@@ -705,4 +713,11 @@ body {
     top: 8px;
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-modal-close:hover,
+.btn-modal-close:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
 }
